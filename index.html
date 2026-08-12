@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<title>firstprinciples — 1:1 Online Math Coach</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --neon:#ccff00;
+    --blue:#0a2647;
+    --grad-start:#0b232b;
+    --grad-end:#1f3167;
+    --fs-lg:24px;
+    --fs-md:16px;
+    --fs-sm:16px;
+    --fs-xl:30px;
+  }
+
+  *{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+  }
+
+  html,body{
+    background:#0b232b;
+  }
+
+  body{
+    font-family:'Roboto Mono', monospace;
+    color:var(--blue);
+    display:flex;
+    justify-content:center;
+  }
+
+  .page{
+    width:390px;
+    max-width:100vw;
+    background:#ffffff;
+    overflow:hidden;
+  }
+
+  /* ---------- HEADER ---------- */
+  .header{
+    background:linear-gradient(90deg, var(--grad-start), var(--grad-end));
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:22px 24px;
+  }
+
+  .logo{
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    display:block;
+    flex-shrink:0;
+  }
+
+  .wordmark{
+    color:var(--neon);
+    font-weight:700;
+    font-size:var(--fs-lg);
+    letter-spacing:0.2px;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding:36px 24px 28px;
+  }
+
+  .hero h1{
+    font-size:var(--fs-xl);
+    font-weight:700;
+    line-height:1.25;
+    color:var(--blue);
+    margin-bottom:18px;
+  }
+
+  .hero p.lede{
+    font-size:var(--fs-md);
+    line-height:1.55;
+    color:var(--blue);
+    font-weight:400;
+    margin-bottom:22px;
+  }
+
+  .divider{
+    border:none;
+    border-top:1px solid var(--blue);
+    opacity:0.35;
+    margin-bottom:22px;
+  }
+
+  .feature-list{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .feature-list li{
+    font-size:var(--fs-md);
+    font-weight:700;
+    color:var(--blue);
+    display:flex;
+    gap:8px;
+  }
+
+  .feature-list li::before{
+    content:"•";
+    color:var(--blue);
+  }
+
+  /* ---------- CURRICULUMS ---------- */
+  .curriculums{
+    background:var(--neon);
+    padding:28px 24px 32px;
+  }
+
+  .curriculums h2{
+    font-size:var(--fs-lg);
+    font-weight:700;
+    color:var(--blue);
+    margin-bottom:20px;
+  }
+
+  .curric-block{
+    margin-bottom:18px;
+  }
+
+  .curric-block:last-child{
+    margin-bottom:0;
+  }
+
+  .curric-label{
+    font-size:var(--fs-md);
+    font-weight:700;
+    color:var(--blue);
+  }
+
+  .curric-items{
+    font-size:var(--fs-md);
+    font-weight:400;
+    color:var(--blue);
+    line-height:1.6;
+  }
+
+  /* ---------- FOOTER / CONTACT ---------- */
+  .footer{
+    background:linear-gradient(90deg, var(--grad-start), var(--grad-end));
+    padding:32px 24px 40px;
+  }
+
+  .footer h3{
+    font-size:var(--fs-lg);
+    font-weight:700;
+    color:#ffffff;
+    margin-bottom:16px;
+  }
+
+  .footer p.bio{
+    font-size:var(--fs-md);
+    color:#ffffff;
+    line-height:1.7;
+    margin-bottom:22px;
+  }
+
+  .footer p.tag{
+    font-size:var(--fs-lg);
+    font-weight:700;
+    color:#ffffff;
+    line-height:1.5;
+    margin-bottom:22px;
+  }
+
+  .contact{
+    font-size:var(--fs-md);
+    color:var(--neon);
+    line-height:1.8;
+  }
+
+  .contact a{
+    color:var(--neon);
+    text-decoration:none;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- Header -->
+  <header class="header">
+    <img class="logo" src="logo.png" alt="firstprinciples logo">
+    <span class="wordmark">firstprinciples</span>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>1:1 Online Math Coach</h1>
+    <p class="lede">Coaching kids through a first-principles approach, turning confusion into clarity, one concept at a time.</p>
+    <hr class="divider">
+    <ul class="feature-list">
+      <li>Grade 8–12</li>
+      <li>Monthly Progress Reports</li>
+      <li>Curated Problem Sets</li>
+    </ul>
+  </section>
+
+  <!-- Curriculums -->
+  <section class="curriculums">
+    <h2>Curriculums</h2>
+    <div class="curric-block">
+      <div class="curric-label">Foundations:</div>
+      <div class="curric-items">CAIE • IGCSE • IB • AP • NCEA • S-GCE (O/N/A)</div>
+    </div>
+    <div class="curric-block">
+      <div class="curric-label">Advanced:</div>
+      <div class="curric-items">AMC • Olympiads • Math Kangaroo • SMO • APMO</div>
+    </div>
+  </section>
+
+  <!-- Footer / Contact -->
+  <footer class="footer">
+    <h3>Rohit Kakati</h3>
+    <p class="bio">Physics Graduate | 3+ Years Turning Confusion Into Clarity<br>Trusted by Indian Families Worldwide</p>
+    <p class="tag">Dedicated 1:1 Attention<br>Limited Student Intake</p>
+    <div class="contact">
+      WhatsApp: <a href="https://wa.me/919560075597">+91-9560075597</a><br>
+      <a href="mailto:rohitkakati.work@gmail.com">rohitkakati.work@gmail.com</a>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
